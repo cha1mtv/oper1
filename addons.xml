@@ -1,0 +1,25 @@
+<addons>
+<addon id="plugin.video.AllInOne"                                                                                                                                    
+	   name="All In One"                      
+	   version="1.0"                                                                                                                                        
+	   provider-name="Chameleon">
+	   <requires>
+    <import addon="script.module.urlresolver"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	
+
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">All In One</summary>
+    <description lang="en">Chameleon|Ebs|Barak|Jk$p|Piz</description>
+    <platform>all</platform>
+
+  </extension>
+</addon>
+</addons>
