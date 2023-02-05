@@ -1,11 +1,172 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.Cha1m19" name="[COLOR lime]Cha[/COLOR][COLOR orange]1m[/COLOR] [COLOR red]Wiz[/COLOR][COLOR aqua]ard[/COLOR][COLOR yellow] 19[/COLOR]" version="0.0.8" provider-name="CHAMELEON">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" optional="true" />
+        <import addon="script.module.six" optional="true" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen]CHAMELEON [/COLOR][COLOR yellow]-[/COLOR] [COLOR red]Wizard[/COLOR]</summary>
+        <description lang="en">[COLOR limegreen]Cha1M [/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <news>
+2.0.0
+ - Kodi 19 ready
+ - Initial Commit
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.thorrent"                                                                                                                                    
+	   name="Thorrent 2"                                                 
+	   version="1.1.2"
+                                                                                                                                        
+	   provider-name="Anonymous TV">
+	   <!--version="4.5.7"-->
+  <requires>
+	
+<import addon="script.module.requests"/>
+	<import addon="script.module.resolveurl" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Anonymous TV</summary>
+    <description lang="en">Anonymous TV</description>
+	
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv V2" version="7.1.2" provider-name="KodiMaster">
+    <requires>
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
+        <summary lang="he">סדרות מתוך האתר Sdarot.Tv</summary>
+        <description lang="en">Sdarot is a site that deals with direct viewing of various series from Israel and abroad. All series are on site contain subtitles, Israeli series also has translation sometimes. sdarot lets watch thousands of different series and tens of thousands of different episodes free! The site sdarot Updated on a daily base and allows direct viewing of innovative technologies while ensuring maximum quality without compromise.</description>
+        <description lang="he">סדרות הינו אתר העוסק בצפייה ישירה של סדרות שונות מהארץ ומחו"ל. כל הסדרות מח"ול הנמצאות באתר סדרות מכילות תרגום לעברית, גם בסדרות הישראליות יש תרגום לעתים. אתר סדרות מאפשר צפייה ישירה חינם לאלפי סדרות שונות ועשרות אלפי פרקים שונים בחינם! אתר סדרות מתעדכן על בסיס יומי ומאפשר צפייה ישירה בטכנולוגיות חדשניות תוך הקפדה על איכות מקסימלית ללא פשרות.</description>
+        <news></news>
+        <supportedcontent>
+        <content>tvshows</content>
+        </supportedcontent>
+		<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+    </extension>
+</addon>
+
+<addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon19[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.2" provider-name="Chameleon">
+        <extension point="xbmc.addon.repository" name="CPTV">
+                <info compressed="false">http://cha1m.com/kids2/addons.xml</info>
+                <checksum>http://cha1m.com/kids2/addons.xml.md5</checksum>
+                <datadir zip="true">http://cha1m.com/kids2/zips</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary></summary>
+                <description lang="he"></description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+
+    <addon id="repository.name" name="Your Repository Name" version="1.0.0" provider-name="Your Name">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Your Repository Name">
+            <info compressed="false">https://raw.githubusercontent.com/Your-Github-Username/repository-link/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Your-Github-Username/repository-link/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Your-Github-Username/repository-link/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>A short summary of this repository</summary>
+            <description>The description can be longer. Using [CR] you can create a newline. The use of other markup is not advised.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.telemedia"                                                                                                                                    
+	   name="Telemedia18 2.0"                                                 
+	   version="2.0.8"                                                                                                                                        
+	   provider-name="Pavel Durov">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+
+	<import addon="script.module.pyxbmct" version="1.1.4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
+    <description lang="he">Telegram media for kodi</description>
+    <platform>all</platform>
+  </extension>
+</addon>  
+<addon id="plugin.video.telemedia19"                                                                                                                                    
+	   name="Telemedia19 2.0"                                                 
+	   version="2.1.0"                                                                                                                                        
+	   provider-name="Pavel Durov">
+  <requires>
+
+	<import addon="script.module.requests"/>
+
+	<import addon="script.module.pyxbmct" version="1.1.4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
+    <description lang="he">Telegram media for kodi</description>
+    <platform>all</platform>
+ <language>en</language>
+ <disclaimer> report any issues with</disclaimer>
+  </extension>
+</addon>
+
 <addon id="plugin.program.Chameleon"                                                                                                                                    
 	   name=" [COLOR deeppink][B]CHAME[COLOR springgreen][B]LEON[/COLOR][/B][COLOR yellow][B] WIZ[/COLOR][/B][COLOR orangered][B]ARD[/COLOR][/B]"                                                 
-	   version="10.0.8"                                                                                                                                        
+	   version="10.5.0"                                                                                                                                        
 	   provider-name="[COLOR orange][B]CHAMELEON[/COLOR][/B]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-
+    <import addon="script.module.requests" optional="true" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>executable</provides>
@@ -17,3 +178,189 @@
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="plugin.video.kids_new"                                                                                                                                    
+	   name="הכל לילדים"                                                 
+	   version="2.0.0"                                                                                                                                        
+	   provider-name="Kid one">
+  <requires>
+
+	<import addon="script.module.requests"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">הכל לילדים</summary>
+    <description lang="he">הכל לילדים</description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvoneVip" name="Iptv" version="1.0.0" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.dateutil"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">tvOne1112</summary>
+    <description lang="en_gb">tvOne1112</description>
+    <disclaimer lang="en_gb"/>
+    <language/>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <forum/>
+    <website/>
+    <email/>
+    <source/>
+    <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.mando"                                                                                                                                    
+	   name="Mando"                                                 
+	   version="6.0.8"                                                                                                                                        
+	   provider-name="Darkness">
+  <requires>
+	
+<!-- <import addon="script.module.requests"/> -->
+	<!-- <import addon="script.module.resolveurl" /> -->
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+	
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kitana" name="Kitana" provider-name="Kitana Hubbard" version="1.1.4">
+	<!--ezra v 0.1.5b -->
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="script.module.myaccounts" version="2.0.3" />
+        <import addon="script.module.kitscrapers" version="0.0.7" />
+        <!-- <import addon="repository.ezra" version="0.0.1" /> -->
+    </requires>
+    <extension library="resources/lib/ezra.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="resources/lib/service.py" point="xbmc.service" />
+    <extension library="resources/lib/" point="xbmc.python.module" />
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="resources/contextmenu/refresh_widgets.py">
+                <label>40001</label>
+                <visible>String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/mark_watched.py">
+                <label>40003</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(ezra_widget),true) + String.IsEqual(ListItem.Property(ezra_playcount),0)</visible>
+            </item>
+            <item library="resources/contextmenu/mark_unwatched.py">
+                <label>40004</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(ezra_widget),true) + String.IsEqual(ListItem.Property(ezra_playcount),1)</visible>
+            </item>
+            <item library="resources/contextmenu/clear_progress.py">
+                <label>40009</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(ezra_widget),true) + String.IsEqual(ListItem.Property(ezra_in_progress),true)</visible>
+            </item>
+            <item library="resources/contextmenu/browse.py">
+                <label>40002</label>
+                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/browse_season.py">
+                <label>40011</label>
+                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/trakt_manager.py">
+                <label>40005</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/favorites_manager.py">
+                <label>40008</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/play_random.py">
+                <label>40010</label>
+                <visible>[String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/options.py">
+                <label>40007</label>
+                <visible>String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/extras.py">
+                <label>40006</label>
+                <visible>String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
+            </item>
+        </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <!-- <reuselanguageinvoker>true</reuselanguageinvoker> -->
+        <summary lang="en">Fast And Simply</summary>
+        <description lang="en">The book of Kitana relates how God's covenant people were restored from Babylonian exile to the covenant land</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+    </extension>
+</addon>
+
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.6.0" provider-name="Sbs">
+  <requires>
+    <!-- #2.3.0 -->
+	<import addon="script.module.requests" version="2.9.1" />
+	<!-- <import addon="script.common.plugin.cache" version="2.5.5"/> -->
+    <import addon="script.subskeys" version="1.0.1"/>
+	<import addon="script.module.chardet" />
+	
+  </requires>
+  <extension point="xbmc.service" library="autosub.py" start="startup"></extension> 
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    <summary lang="en">All sites Subs Super Speed</summary>
+    <description lang="en">All sites Subs. Subcenter.wizdom,subcene,opensubtitles. Thanks to:Catz,wizdom,manacker,amet</description>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+</addons>
